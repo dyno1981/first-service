@@ -1,0 +1,1 @@
+INSERT INTO members (username) VALUES ('alice'), ('bob');

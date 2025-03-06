@@ -1,0 +1,27 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: my-first-service
+  datasource:
+    url: jdbc:mariadb://192.168.219.104:3306/bifrost
+    username: bifrost
+    password: Eksldpf23@#
+    driver-class-name: org.mariadb.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: none    # create, update, none 등
+    show-sql: true      # 콘솔에 SQL 출력 여부
+  sql:
+    init:
+      mode: always       # schema.sql, data.sql 실행 활성화
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+
+logging:
+  level:
+    org.springframework.jdbc.datasource.init: DEBUG
