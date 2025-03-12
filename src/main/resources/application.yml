@@ -5,8 +5,8 @@ spring:
   application:
     name: my-first-service
   datasource:
-    url: jdbc:mariadb://192.168.219.104:3306/bifrost
-    username: bifrost
+    url: jdbc:mariadb://daniel-mark1.myds.me:3306/bifrost
+    username: bifrost_admin
     password: Eksldpf23@#
     driver-class-name: org.mariadb.jdbc.Driver
   jpa:
